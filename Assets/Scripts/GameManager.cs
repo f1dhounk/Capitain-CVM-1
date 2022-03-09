@@ -132,9 +132,15 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(nomScene);
     }
 
+    public GameObject fondu;
+
     public void ChangementScene(Scene current, Scene next)
     {
-        GameObject.Find("Fondu").SetActive(false);
+        fondu = GameObject.Find("Fondu");
+
+        Debug.Log(fondu);
+
+        fondu.SetActive(false);
     }
 
     #endregion
