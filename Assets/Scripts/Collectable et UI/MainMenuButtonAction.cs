@@ -10,6 +10,7 @@ public class MainMenuButtonAction : MonoBehaviour
     /// <param name="PanelAOuvrir">Panel à afficher</param>
     public void AfficherPanel(GameObject PanelAOuvrir)
     {
+        Debug.Log(PanelAOuvrir);
         PanelAOuvrir.SetActive(true);
     }
 
